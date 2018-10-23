@@ -8,13 +8,13 @@ prime_numbers = []
 for x in range(2, maximum+1):
     numbers.append(x)
 
+while len(numbers) > 0:
+    prime_numbers.append(numbers[0])
 
-prime_numbers.append(numbers[0])
+    for y in numbers:
+        if y % prime_numbers[-1] == 0:
+            numbers.remove(y)
 
-for x in range(len(numbers)):
-    if x+1 % prime_numbers[-1] == 0:
-        numbers.remove(x+1)
-
-
+print(" ")
 print(numbers)
 print(prime_numbers)
