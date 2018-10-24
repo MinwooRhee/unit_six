@@ -33,7 +33,7 @@ def sieve_of_eratosthenes(numbers, prime_numbers):
     :return: list of prime numbers
     """
 
-    while len(numbers) > 0:
+    while len(numbers) > 0:  # loop runs until all numbers are crossed out (removed) in the list
         prime_numbers.append(numbers[0])
 
         for y in numbers:
